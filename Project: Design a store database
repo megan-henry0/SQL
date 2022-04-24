@@ -19,4 +19,4 @@ INSERT INTO clothing VALUES
 
 SELECT * FROM clothing ORDER BY item_id ASC;
 
-SELECT * FROM clothing WHERE size="Small";    
+SELECT item_name, size, quantity FROM clothing WHERE size="Small";    
