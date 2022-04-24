@@ -1,0 +1,22 @@
+CREATE TABLE clothing (item_id INTEGER PRIMARY KEY, item_name TEXT, size TEXT, price INTEGER, quantity INTEGER);
+
+INSERT INTO clothing VALUES 
+    (1, "Shirt A","Small", 10, 5),
+    (2, "Shirt B", "Small", 10, 3),
+    (3, "Shirt C", "Medium", 15, 6),
+    (4, "Shirt D", "Large", 20, 6),
+    (5, "Pant A", "Small", 15, 3),
+    (6, "Pant B", "Medium", 20, 4),
+    (7, "Pant C", "Large", 25, 2),
+    (8, "Jacket A", "Small", 20, 2),
+    (9, "Jacket B", "Medium", 25, 4),
+    (10, "Jacket C", "Large", 30, 2),
+    (11, "Shoe A", "Small", 25, 4),
+    (12, "Shoe B", "Small", 25, 5),
+    (13, "Shoe C", "Medium", 30, 4),
+    (14, "Sock Pack A", "Small", 10, 3),
+    (15, "Sock Pack B", "Medium", 15, 4);
+
+SELECT * FROM clothing ORDER BY item_id ASC;
+
+SELECT * FROM clothing WHERE size="Small";    
